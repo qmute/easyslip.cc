@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/css/easyslipCss.css">
+    <script type="text/javascript" src="./source/js/jquery.js"></script>
+    <link rel="shortcut icon" href="./favicon.png" />
+    <title>Easy Slip</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- head part -->
+        <section>
+            <div id="head">
+                <div id="logo"><img src="./source/img/logo_set.svg" alt=""></div>
+            </div>
+            <div class="sloganBox">
+                <h1>热爱创新<br>
+                    尊重传统文化及包容性。<br>
+                    我们是一个小型的开发工作室<br>
+                    满怀热情、拥抱生活。</h1>
+            </div>
+        </section>
+        <!-- our project -->
+        <section id="projectSection">
+            <div class="sectionHead">我们的项目</div>
+            <div class="projectList">
+                <div class="projectBox">
+                    <img src="./source/img/24st.jpg" alt="" width="100%">
+                    <span class="pjName">中国24节气(24 solar terms)</span>
+                    <span class="pjInfo">面向全球，为各国用户介绍中国传统文化，结合中国国画把中国传统文化输出向全世界。</span>
+                    <a class="pjButton" href="###">查看详细</a>
+                </div>
+                <div class="projectBox">
+                    <img src="./source/img/hcls.jpg" alt="" width="100%">
+                    <span class="pjName">悦聊小七</span>
+                    <span class="pjInfo">致力于为当下压力过大、有情绪困扰的青年人提供疗愈和松弛的聊天体验</span>
+                    <a class="pjButton" href="###">查看详细</a>
+                </div>
+                <div class="projectBox">
+                    <img src="./source/img/yb.jpg" alt="" width="100%">
+                    <span class="pjName">易卜</span>
+                    <span class="pjInfo">易卜是一款专业电子起卦软件工具，由多位专业易经大师参考古籍文献编著而成卦图详解。本软件运用文王八卦专业的占卜方法，助你了解自己在事业、财运、爱情、健康、学业等运势动向，时刻拥有选择利于自己的方向。</span>
+                    <a class="pjButton" href="https://yibu.easyslip.io" target="_blank">查看详细</a>
+                </div>
+            </div>
+        </section>
+        <section id="contentSection">
+            <div class="sectionHead">联系我们</div>
+            <div class="cuBox">
+                <img src="./source/img/Email.svg" alt="" width="40px" height="40px">
+                <a  href="mailto:justliedown@easyslip.io">justliedown@easyslip.io</a>
+            </div>
+        </section>
+        <section id="footSection">
+            <div class="footLogo"><img src="./source/img/logo_set.svg" alt="" width="120px"></div>
+            <span class="copyright">
+                ©copyright 2024 易简创新(北京)科技有限公司 All rights reserved.&nbsp;&nbsp;<a href="https://beian.miit.gov.cn" target="_blank">京ICP备2024065675号-1</a>
+                <!-- <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102006698" style="display:inline-block;padding-left: 10px;"><img src="./bsSource/img/batb.png" style="float:left; padding-right: 5px;width: 20px;"/><p style="white-space: nowrap;">京公网安备 11010102006698号</p></a> -->
+            </span>
+        </section>
+    </div>
+</body>
+<script  type="text/javascript">
+    $(document).ready(function() {
+        var windowWidth = $(window).width();
+        var projectW = $(".projectBox").width();
+        function heightChange() {
+            $("#head").height(windowWidth/2);
+            // $(".projectBox").height(projectW/5*3);
+        }
+        heightChange();
+
+        $(window).resize(function(){
+            var windowWidth = $(window).width();
+            $("#head").height(windowWidth/2);
+        });
+
+        function jumpyibu(){
+            window.location.href="./yibu/yibuIndex.html"
+        }
+        
+    });
+    
+</script>
+</html>
